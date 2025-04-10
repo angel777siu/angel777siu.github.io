@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <style>
+        body {
+            font-family: Times New Roman, sans-serif;
+            background: url('https://i.pinimg.com/originals/13/36/1c/13361c6604400abb2d8da4905b6529e2.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            overflow: auto;
+            padding: 20px;
+        }
+        .form-container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        button {
+            background: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 15px;
+            width: 100%;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form action="#" method="post">
+            <label for="Nombre">Nombre:</label>
+            <input type="text" id="Nombre" name="Nombre" required placeholder="Escribe tu nombre">
+            
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required placeholder="Escribe tu apellido">
+            
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
+            
+            <label for="domicilio">Domicilio:</label>
+            <input type="text" id="domicilio" name="domicilio" required placeholder="Domicilio">
+            
+            <label for="calle">Calle:</label>
+            <input type="text" id="calle" name="calle" required placeholder="Calle">
+            
+            <label for="no_interior">No. Interior:</label>
+            <input type="text" id="no_interior" name="no_interior" placeholder="Número interior">
+            
+            <label for="colonia">Colonia:</label>
+            <input type="text" id="colonia" name="colonia" required placeholder="Colonia">
+            
+            <label for="cp">C.P.:</label>
+            <input type="text" id="cp" name="cp" required placeholder="Código Postal">
+            
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto" placeholder="Asunto del mensaje">
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí"></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
